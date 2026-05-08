@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import signatureImage from "../assets/images/signature.svg";
 import {
   Star,
   ArrowRight,
@@ -177,7 +178,7 @@ export const Home = () => {
               </p>
               {/* https://upload.wikimedia.org/wikipedia/commons/c/c5/Signature_Placeholder.svg */}
               <img
-                src="images/signature.svg"
+                src={signatureImage}
                 alt="Founder Signature"
                 className="h-30 opacity-30"
               />

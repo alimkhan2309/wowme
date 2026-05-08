@@ -2,6 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { Menu, X, Instagram, Facebook, MapPin, Phone, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+
+import logoLight from "../assets/images/logo.png";
+import logoDark from "../assets/images/logo-dark.png";
+
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -71,7 +76,7 @@ const Navbar = () => {
           className="text-3xl font-serif font-medium tracking-wide text-charcoal"
         >
           <img
-            src={`${isSolid ? "/images/logo-dark.png" : "/images/logo.png"}`}
+            src={isSolid ? logoDark : logoLight}
             alt="Company Logo"
             className="h-30"
           />
